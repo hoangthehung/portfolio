@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Hoang The Hung — Staff Software Engineer &amp; Solution Architect specialising in distributed Java systems, event-driven architecture, and AWS cloud platforms.">
+  <title>Hoang The Hung — Solution Architect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <nav aria-label="Primary navigation">
+      <a href="/" class="nav-logo" aria-label="Hoang The Hung — home">HTH</a>
+      <ul role="list">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Accessible section headings for screen readers, outside the grid -->
+  <h2 class="sr-only" id="work-heading">Selected Work</h2>
+  <h2 class="sr-only" id="contact-heading-label">Contact</h2>
+
+  <main id="main">
+    <div class="bento-grid" role="region" aria-label="Portfolio overview">
+
+      <!-- Hero Card -->
+      <article class="card card--hero" aria-labelledby="hero-heading">
+        <p class="card__eyebrow">Staff Software Engineer &amp; Solution Architect</p>
+        <h1 id="hero-heading">
+          Distributed systems<br>built to <em>scale and last.</em>
+        </h1>
+        <p class="hero-desc">
+          19+ years designing enterprise Java platforms — from national payment
+          gateways to cloud-native fintech at Singtel. Specialising in
+          microservices, event-driven architecture, and AWS-based systems
+          that handle millions of transactions.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn--primary">View my work</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+      </article>
+
+      <!-- Availability Card -->
+      <article class="card card--status" aria-label="Current availability">
+        <div class="status-pip" aria-hidden="true"></div>
+        <span class="status-label">Open to new roles</span>
+        <p class="status-detail">Full-time &amp; onsite · Singapore</p>
+      </article>
+
+      <!-- Stack Card -->
+      <article class="card card--skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading" class="card__section-title">Core Stack</h2>
+        <ul class="skills-list" role="list">
+          <li>Java 17 / Spring Boot</li>
+          <li>Apache Kafka</li>
+          <li>AWS (EKS, Lambda, SQS)</li>
+          <li>Kubernetes / Docker</li>
+          <li>Spring WebFlux</li>
+          <li>Terraform / CI/CD</li>
+        </ul>
+      </article>
+
+      <!-- Project 1 -->
+      <article
+        class="card card--project card--project-1"
+        id="work"
+        aria-labelledby="proj1-title"
+        aria-describedby="work-heading"
+      >
+        <p class="project-tag">Fintech · Singtel</p>
+        <h3 id="proj1-title">DASH Mobile Wallet</h3>
+        <p>Architected and led development of Singtel's DASH — a mobile wallet and cross-border remittance platform. Designed 10+ event-driven microservices on AWS with reactive, high-throughput pipelines.</p>
+        <div class="project-meta" aria-label="Technologies used">
+          <span class="project-tech">Spring Boot</span>
+          <span class="project-tech">Kafka</span>
+          <span class="project-tech">AWS EKS</span>
+          <span class="project-tech">Spring WebFlux</span>
+        </div>
+        <a href="#" class="card-link" aria-label="View DASH Mobile Wallet project">
+          View project <span aria-hidden="true">→</span>
+        </a>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card card--project card--project-2" aria-labelledby="proj2-title">
+        <p class="project-tag">Payments · VTC</p>
+        <h3 id="proj2-title">National Payment Gateway</h3>
+        <p>Designed and delivered a high-availability payment gateway integrating Visa, Mastercard, and 30+ Vietnamese banks — processing millions of transactions with a team of 20+ engineers.</p>
+        <div class="project-meta" aria-label="Technologies used">
+          <span class="project-tech">Java</span>
+          <span class="project-tech">Spring</span>
+          <span class="project-tech">PostgreSQL</span>
+          <span class="project-tech">Oracle</span>
+        </div>
+        <a href="#" class="card-link" aria-label="View National Payment Gateway project">
+          View project <span aria-hidden="true">→</span>
+        </a>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="card card--project card--project-3" aria-labelledby="proj3-title">
+        <p class="project-tag">IoT · Dashan Zhone</p>
+        <h3 id="proj3-title">IoT Device Management Platform</h3>
+        <p>Architected a multi-protocol IoT management platform supporting SNMP, USP, and TR-069 devices at scale. Built on a microservices foundation with event streaming for real-time device telemetry.</p>
+        <div class="project-meta" aria-label="Technologies used">
+          <span class="project-tech">Spring Cloud</span>
+          <span class="project-tech">Kafka</span>
+          <span class="project-tech">Docker</span>
+          <span class="project-tech">Java</span>
+        </div>
+        <a href="#" class="card-link" aria-label="View IoT Device Management Platform project">
+          View project <span aria-hidden="true">→</span>
+        </a>
+      </article>
+
+      <!-- Contact Card -->
+      <article
+        class="card card--contact"
+        id="contact"
+        aria-labelledby="contact-heading"
+      >
+        <h2 id="contact-heading">Let's work together.</h2>
+        <p class="contact-intro">Interested in working together or have an architecture challenge to solve? I'd love to hear from you.</p>
+
+        <form
+          class="contact-form"
+          novalidate
+          aria-label="Send a message"
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                required
+                aria-required="true"
+                placeholder="Your name"
+              >
+              <span class="form-error" id="name-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+                aria-required="true"
+                placeholder="your@email.com"
+              >
+              <span class="form-error" id="email-error" role="alert"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              aria-required="true"
+              placeholder="Tell me about the role or project..."
+            ></textarea>
+            <span class="form-error" id="message-error" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--submit">
+            Send message
+          </button>
+
+          <div
+            id="form-success"
+            class="form-success"
+            role="status"
+            aria-live="polite"
+            hidden
+          >
+            Message sent — I'll get back to you soon.
+          </div>
+        </form>
+      </article>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Hoang The Hung · Singapore</p>
+    <nav aria-label="Social links">
+      <a href="mailto:hoangthehung@gmail.com" aria-label="Send email">Email</a>
+      <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
+      <a href="#" aria-label="GitHub profile">GitHub</a>
+    </nav>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
